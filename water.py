@@ -3,7 +3,7 @@
 import time
 from pybamboo.dataset import Dataset
 
-d = Dataset(path='water_points.csv')
+d = Dataset(path='data/water_points.csv')
 
 print 'dataset id: %s' % d.id
 time.sleep(2)

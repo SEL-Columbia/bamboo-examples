@@ -1,0 +1,265 @@
+{
+   "attribution" : "",
+   "num_columns" : 42,
+   "num_rows" : 255,
+   "schema" : {
+      "water_not_functioning_other_" : {
+         "simpletype" : "string",
+         "cardinality" : 1,
+         "label" : "water_not_functioning_other",
+         "olap_type" : "dimension"
+      },
+      "water_source_type" : {
+         "simpletype" : "string",
+         "cardinality" : 7,
+         "label" : "water_source_type",
+         "olap_type" : "dimension"
+      },
+      "other_point_1km" : {
+         "simpletype" : "string",
+         "cardinality" : 2,
+         "label" : "other_point_1km",
+         "olap_type" : "dimension"
+      },
+      "water_mechanism_plate" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "water_mechanism_plate",
+         "olap_type" : "dimension"
+      },
+      "latitude" : {
+         "simpletype" : "string",
+         "cardinality" : 255,
+         "label" : "latitude",
+         "olap_type" : "dimension"
+      },
+      "water_not_functioning_kiosk_broken" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "water_not_functioning/kiosk_broken",
+         "olap_type" : "dimension"
+      },
+      "water_not_functioning_other" : {
+         "simpletype" : "string",
+         "cardinality" : 2,
+         "label" : "water_not_functioning/other",
+         "olap_type" : "dimension"
+      },
+      "wards" : {
+         "simpletype" : "string",
+         "cardinality" : 2,
+         "label" : "wards",
+         "olap_type" : "dimension"
+      },
+      "longitude" : {
+         "simpletype" : "string",
+         "cardinality" : 255,
+         "label" : "longitude",
+         "olap_type" : "dimension"
+      },
+      "road_type_other" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "road_type/other",
+         "olap_type" : "dimension"
+      },
+      "water_not_functioning_lift_broken" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "water_not_functioning/lift_broken",
+         "olap_type" : "dimension"
+      },
+      "districts" : {
+         "simpletype" : "string",
+         "cardinality" : 2,
+         "label" : "districts",
+         "olap_type" : "dimension"
+      },
+      "water_not_functioning_improperly_constr" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "water_not_functioning/improperly_constr",
+         "olap_type" : "dimension"
+      },
+      "water_pay" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "water_pay",
+         "olap_type" : "dimension"
+      },
+      "water_manager" : {
+         "simpletype" : "string",
+         "cardinality" : 8,
+         "label" : "water_manager",
+         "olap_type" : "dimension"
+      },
+      "water_functioning" : {
+         "simpletype" : "string",
+         "cardinality" : 2,
+         "label" : "water_functioning",
+         "olap_type" : "dimension"
+      },
+      "end" : {
+         "simpletype" : "datetime",
+         "cardinality" : 255,
+         "label" : "end",
+         "olap_type" : "measure"
+      },
+      "water_not_functioning_water_source_dry" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "water_not_functioning/water_source_dry",
+         "olap_type" : "dimension"
+      },
+      "road_type_paved" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "road_type/paved",
+         "olap_type" : "dimension"
+      },
+      "animal_point" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "animal_point",
+         "olap_type" : "dimension"
+      },
+      "water_connected" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "water_connected",
+         "olap_type" : "dimension"
+      },
+      "road_type_none" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "road_type/none",
+         "olap_type" : "dimension"
+      },
+      "start" : {
+         "simpletype" : "datetime",
+         "cardinality" : 255,
+         "label" : "start",
+         "olap_type" : "measure"
+      },
+      "water_lift_mechanism_type" : {
+         "simpletype" : "string",
+         "cardinality" : 5,
+         "label" : "water_lift_mechanism_type",
+         "olap_type" : "dimension"
+      },
+      "road_type_dirt" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "road_type/dirt",
+         "olap_type" : "dimension"
+      },
+      "road_available" : {
+         "simpletype" : "string",
+         "cardinality" : 2,
+         "label" : "road_available",
+         "olap_type" : "dimension"
+      },
+      "water_point_condition" : {
+         "simpletype" : "string",
+         "cardinality" : 6,
+         "label" : "water_point_condition",
+         "olap_type" : "dimension"
+      },
+      "water_developer" : {
+         "simpletype" : "string",
+         "cardinality" : 9,
+         "label" : "water_developer",
+         "olap_type" : "dimension"
+      },
+      "grid" : {
+         "simpletype" : "string",
+         "cardinality" : 4,
+         "label" : "grid",
+         "olap_type" : "dimension"
+      },
+      "water_not_functioning_missing_parts" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "water_not_functioning/missing_parts",
+         "olap_type" : "dimension"
+      },
+      "water_not_functioning_none" : {
+         "simpletype" : "string",
+         "cardinality" : 2,
+         "label" : "water_not_functioning/none",
+         "olap_type" : "dimension"
+      },
+      "road_type_gravel" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "road_type/gravel",
+         "olap_type" : "dimension"
+      },
+      "water_not_functioning_na_dn" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "water_not_functioning/na_dn",
+         "olap_type" : "dimension"
+      },
+      "water_not_functioning_poor_water" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "water_not_functioning/poor_water",
+         "olap_type" : "dimension"
+      },
+      "date_" : {
+         "simpletype" : "datetime",
+         "cardinality" : 8,
+         "label" : "date",
+         "olap_type" : "measure"
+      },
+      "communities" : {
+         "simpletype" : "string",
+         "cardinality" : 29,
+         "label" : "communities",
+         "olap_type" : "dimension"
+      },
+      "water_not_functioning_under_construction" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "water_not_functioning/under_construction",
+         "olap_type" : "dimension"
+      },
+      "signal" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "signal",
+         "olap_type" : "dimension"
+      },
+      "water_used_season" : {
+         "simpletype" : "string",
+         "cardinality" : 6,
+         "label" : "water_used_season",
+         "olap_type" : "dimension"
+      },
+      "water_lift_mechanism" : {
+         "simpletype" : "string",
+         "cardinality" : 3,
+         "label" : "water_lift_mechanism",
+         "olap_type" : "dimension"
+      },
+      "road_type_na_dn" : {
+         "simpletype" : "string",
+         "cardinality" : 2,
+         "label" : "road_type/na_dn",
+         "olap_type" : "dimension"
+      },
+      "animal_number" : {
+         "simpletype" : "string",
+         "cardinality" : 4,
+         "label" : "animal_number",
+         "olap_type" : "dimension"
+      }
+   },
+   "license" : "",
+   "description" : "",
+   "created_at" : "2012-12-27 20:03:50",
+   "updated_at" : "2012-12-27 20:03:52",
+   "label" : "",
+   "id" : "27bc0d25cb75463fa22d3993a707d4b1"
+}
