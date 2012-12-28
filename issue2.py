@@ -7,8 +7,9 @@ import time
 
 from pybamboo.dataset import Dataset
 
+DATASET_ID = sys.argv[-1]
 CSV_URL = u"https://github.com/modilabs/bamboo-examples/raw/master/data/water_points.csv"
-DATASET_ID = ''
+
 WAIT_INTERVAL = 10
 WAIT_MAX = 180
 
