@@ -1,7 +1,7 @@
 {
    "attribution" : "",
-   "num_columns" : 42,
-   "num_rows" : 255,
+   "num_rows" : 254,
+   "num_columns" : 33,
    "schema" : {
       "water_not_functioning_other_" : {
          "simpletype" : "string",
@@ -21,17 +21,17 @@
          "label" : "other_point_1km",
          "olap_type" : "dimension"
       },
-      "water_mechanism_plate" : {
+      "community" : {
          "simpletype" : "string",
-         "cardinality" : 3,
-         "label" : "water_mechanism_plate",
+         "cardinality" : 29,
+         "label" : "community",
          "olap_type" : "dimension"
       },
       "latitude" : {
-         "simpletype" : "string",
-         "cardinality" : 255,
+         "simpletype" : "float",
+         "cardinality" : 254,
          "label" : "latitude",
-         "olap_type" : "dimension"
+         "olap_type" : "measure"
       },
       "water_not_functioning_kiosk_broken" : {
          "simpletype" : "string",
@@ -45,23 +45,11 @@
          "label" : "water_not_functioning/other",
          "olap_type" : "dimension"
       },
-      "wards" : {
-         "simpletype" : "string",
-         "cardinality" : 2,
-         "label" : "wards",
-         "olap_type" : "dimension"
-      },
       "longitude" : {
-         "simpletype" : "string",
-         "cardinality" : 255,
+         "simpletype" : "float",
+         "cardinality" : 254,
          "label" : "longitude",
-         "olap_type" : "dimension"
-      },
-      "road_type_other" : {
-         "simpletype" : "string",
-         "cardinality" : 3,
-         "label" : "road_type/other",
-         "olap_type" : "dimension"
+         "olap_type" : "measure"
       },
       "water_not_functioning_lift_broken" : {
          "simpletype" : "string",
@@ -69,10 +57,10 @@
          "label" : "water_not_functioning/lift_broken",
          "olap_type" : "dimension"
       },
-      "districts" : {
+      "region" : {
          "simpletype" : "string",
          "cardinality" : 2,
-         "label" : "districts",
+         "label" : "region",
          "olap_type" : "dimension"
       },
       "water_not_functioning_improperly_constr" : {
@@ -99,22 +87,10 @@
          "label" : "water_functioning",
          "olap_type" : "dimension"
       },
-      "end" : {
-         "simpletype" : "datetime",
-         "cardinality" : 255,
-         "label" : "end",
-         "olap_type" : "measure"
-      },
       "water_not_functioning_water_source_dry" : {
          "simpletype" : "string",
          "cardinality" : 3,
          "label" : "water_not_functioning/water_source_dry",
-         "olap_type" : "dimension"
-      },
-      "road_type_paved" : {
-         "simpletype" : "string",
-         "cardinality" : 3,
-         "label" : "road_type/paved",
          "olap_type" : "dimension"
       },
       "animal_point" : {
@@ -129,28 +105,16 @@
          "label" : "water_connected",
          "olap_type" : "dimension"
       },
-      "road_type_none" : {
+      "district" : {
          "simpletype" : "string",
-         "cardinality" : 3,
-         "label" : "road_type/none",
+         "cardinality" : 6,
+         "label" : "district",
          "olap_type" : "dimension"
-      },
-      "start" : {
-         "simpletype" : "datetime",
-         "cardinality" : 255,
-         "label" : "start",
-         "olap_type" : "measure"
       },
       "water_lift_mechanism_type" : {
          "simpletype" : "string",
          "cardinality" : 5,
          "label" : "water_lift_mechanism_type",
-         "olap_type" : "dimension"
-      },
-      "road_type_dirt" : {
-         "simpletype" : "string",
-         "cardinality" : 3,
-         "label" : "road_type/dirt",
          "olap_type" : "dimension"
       },
       "road_available" : {
@@ -171,12 +135,6 @@
          "label" : "water_developer",
          "olap_type" : "dimension"
       },
-      "grid" : {
-         "simpletype" : "string",
-         "cardinality" : 4,
-         "label" : "grid",
-         "olap_type" : "dimension"
-      },
       "water_not_functioning_missing_parts" : {
          "simpletype" : "string",
          "cardinality" : 3,
@@ -187,12 +145,6 @@
          "simpletype" : "string",
          "cardinality" : 2,
          "label" : "water_not_functioning/none",
-         "olap_type" : "dimension"
-      },
-      "road_type_gravel" : {
-         "simpletype" : "string",
-         "cardinality" : 3,
-         "label" : "road_type/gravel",
          "olap_type" : "dimension"
       },
       "water_not_functioning_na_dn" : {
@@ -209,15 +161,9 @@
       },
       "date_" : {
          "simpletype" : "datetime",
-         "cardinality" : 8,
+         "cardinality" : 7,
          "label" : "date",
          "olap_type" : "measure"
-      },
-      "communities" : {
-         "simpletype" : "string",
-         "cardinality" : 29,
-         "label" : "communities",
-         "olap_type" : "dimension"
       },
       "water_not_functioning_under_construction" : {
          "simpletype" : "string",
@@ -225,16 +171,10 @@
          "label" : "water_not_functioning/under_construction",
          "olap_type" : "dimension"
       },
-      "signal" : {
+      "mobile_signal" : {
          "simpletype" : "string",
          "cardinality" : 3,
-         "label" : "signal",
-         "olap_type" : "dimension"
-      },
-      "water_used_season" : {
-         "simpletype" : "string",
-         "cardinality" : 6,
-         "label" : "water_used_season",
+         "label" : "mobile_signal",
          "olap_type" : "dimension"
       },
       "water_lift_mechanism" : {
@@ -243,10 +183,10 @@
          "label" : "water_lift_mechanism",
          "olap_type" : "dimension"
       },
-      "road_type_na_dn" : {
+      "water_used_season" : {
          "simpletype" : "string",
-         "cardinality" : 2,
-         "label" : "road_type/na_dn",
+         "cardinality" : 6,
+         "label" : "water_used_season",
          "olap_type" : "dimension"
       },
       "animal_number" : {
@@ -254,12 +194,19 @@
          "cardinality" : 4,
          "label" : "animal_number",
          "olap_type" : "dimension"
+      },
+      "community_pop" : {
+         "simpletype" : "integer",
+         "cardinality" : 24,
+         "label" : "community_pop",
+         "olap_type" : "measure"
       }
    },
    "license" : "",
    "description" : "",
-   "created_at" : "2012-12-27 20:03:50",
-   "updated_at" : "2012-12-27 20:03:52",
-   "label" : "",
-   "id" : "27bc0d25cb75463fa22d3993a707d4b1"
+   "state" : "ready",
+   "created_at" : "2012-12-28 07:00:58",
+   "updated_at" : "2012-12-28 07:01:00",
+   "id" : "89940cf675d344c3ab38502290340c00",
+   "label" : ""
 }
