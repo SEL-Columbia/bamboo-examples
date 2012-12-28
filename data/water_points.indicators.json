@@ -1,0 +1,9 @@
+[
+
+    {
+
+	"name": "people_to_water_point_ratio",
+	"formula": "water_points_count / community_pop" 
+    }
+
+]
