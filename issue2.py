@@ -6,6 +6,10 @@ import sys
 import time
 
 from pybamboo.dataset import Dataset
+from pybamboo.connection import Connection
+
+LOCAL_HOST = False
+connect = Connection(url='http://localhost:8080') if LOCAL_HOST else Connection()
 
 DATASET_ID = sys.argv[-1]
 CSV_URL = u"https://github.com/modilabs/bamboo-examples/raw/master/data/water_points.csv"
@@ -13,12 +17,12 @@ CSV_URL = u"https://github.com/modilabs/bamboo-examples/raw/master/data/water_po
 WAIT_INTERVAL = 10
 WAIT_MAX = 180
 
-if DATASET_ID:
+if len(sys.argv) > 1 and DATASET_ID:
     print("Retrieving dataset from UUID %s" % DATASET_ID)
-    dataset = Dataset(dataset_id=DATASET_ID)
+    dataset = Dataset(dataset_id=DATASET_ID, connection=connect)
 else:
     print(u"Creating dataset from %s" % CSV_URL)
-    dataset = Dataset(url=CSV_URL)
+    dataset = Dataset(url=CSV_URL, connection=connect)
 
 waited = 0
 while(dataset.get_info().get(u'state', 'ready') != 'ready'):
@@ -35,9 +39,11 @@ print(dataset.get_info())
 print(u"---")
 
 print(u"Creating calculations")
-dataset.add_aggregation(formula='water_points=count()', groups=['district'])
-dataset.add_aggregation(formula='district_pop=sum(community_pop)', groups=['district'])
-dataset.add_calculation(formula='district_pop_to_wp=district_pop/water_points')
+print dataset.add_aggregation(formula='water_points=count()', groups=['district'])
+print dataset.add_aggregation(formula='district_pop=sum(community_pop)', groups=['district'])
+# The below is invalid because aggregations are not stored as columns in the
+# dataset they are added to.  And district_pop is an aggregation.
+#print dataset.add_calculation(formula='district_pop_to_wp=district_pop/water_points')
 print(u"---")
 
 print(u"Listing calculations")
