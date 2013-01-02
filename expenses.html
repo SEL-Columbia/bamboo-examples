@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bamboo Datasets with JS templating</title>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- 3rd party JS libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/handlebars-1.0.rc.1.js"></script>
+
+    <!--[if lte IE 7]>
+    <script language="javascript" type="text/javascript" src="js/json2.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="content"></div>
+<script type="text/javascript">
+var bambooUrl = "http://bamboo.io/datasets/c0a0c4771ffe4c3cb62bbca380c9bcb5";
+$(document).ready(function(){
+    var template_src = $('#all-expenses').html();
+    var all_expenses_template = Handlebars.compile(template_src);
+    var jqXHR = $.getJSON(bambooUrl);
+    jqXHR.success(function(data){
+        var html = all_expenses_template({records: data});
+        $("#content").html(html);
+    });
+    jqXHR.fail(function(){
+
+    });
+});
+</script>
+<!-- templates -->
+<script id="all-expenses" type="text/x-handlebars-template">
+    <table width="400px">
+        <tr>
+            <th align="left">Expense</th>
+            <th align="right">Amount</th>
+            <th align="right">Amount USD</th>
+        </tr>
+        {{#each records}}
+        <tr>
+            <td align="left">{{expense_type}}</td>
+            <td align="right">{{total_amount}}</td>
+            <td align="right">{{total_usd}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</script>
+</body>
+</html>
+
