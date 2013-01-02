@@ -20,7 +20,7 @@
 <body>
 <div id="content"></div>
 <script type="text/javascript">
-var bambooUrl = "http://bamboo.io/datasets/c0a0c4771ffe4c3cb62bbca380c9bcb5";
+var bambooUrl = "http://bamboo.io/datasets/eaa43ef6baa54af4948303fd093d9756";
 $(document).ready(function(){
     var template_src = $('#all-expenses').html();
     var all_expenses_template = Handlebars.compile(template_src);
@@ -36,17 +36,19 @@ $(document).ready(function(){
 </script>
 <!-- templates -->
 <script id="all-expenses" type="text/x-handlebars-template">
-    <table width="400px">
+    <table width="60%">
         <tr>
             <th align="left">Expense</th>
+            <th align="left">Description</th>
+            <th align="right">Payment Method</th>
             <th align="right">Amount</th>
-            <th align="right">Amount USD</th>
         </tr>
         {{#each records}}
         <tr>
             <td align="left">{{expense_type}}</td>
-            <td align="right">{{total_amount}}</td>
-            <td align="right">{{total_usd}}</td>
+            <td align="left">{{description}}</td>
+            <td align="right">{{payment_method}}</td>
+            <td align="right">{{amount}}</td>
         </tr>
         {{/each}}
     </table>
