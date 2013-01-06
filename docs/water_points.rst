@@ -1,8 +1,6 @@
 Broken Water Points
 ===================
 
-Using mobile phones to help monitor broken water points is a common use case for ICT in development.
-
 In this example, we'll show you how bamboo with a mobile reporting platform like formhub could be used to help you monitor the functionality of water points.
 
 Create the Water Point Report
@@ -110,7 +108,7 @@ To allow for updates, we'll need to add the ability for formhub to update the da
 
 .. image:: water_points/img/bamboo_add_rest.png
 
-Click add service to establish the link.  The bamboo dataset will now be automatically updated whenever a new form submission is received.
+Click add service to establish the link.  The bamboo dataset (and all its derived aggregated sets) will now be automatically updated whenever a new form submission is received.
 
 .. image:: water_points/img/bamboo_rest_added.png
 
