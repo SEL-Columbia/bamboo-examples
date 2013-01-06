@@ -1,0 +1,47 @@
+Broken Water Points
+===================
+
+Using mobile phones to help monitor broken water points is a common use case for ICT in development.
+
+In this example, we'll show you how bamboo with a mobile reporting platform like formhub could be used to help you monitor the functionality of water points.
+
+Create the Water Point Report
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+First, let's create a very simple water report form using an XLSForm consisting of the following fields:
+
+* **submit_date** - Date the water point was checked
+* **wp_id** - Water point id
+* **functional** - A boolean (yes/no) is the water point functional
+
+Note: Please avoid naming any fields "date" or bamboo will mistake it with an internal date function.
+
+Next, download `water_point_report.xls <http://formhub.org/mberg/forms/water_point_report/form.xls>`_ which is an XLSForm [#]_ representation of the form above and publish it to your `formhub <http://formhub.org>`_ account.  This will allow you to begin collecting data using this form via ODK Collect on your mobile or via a web-form.
+
+Once you've published your form to formhub, you  click on the `webform link <http://pmywi.enketo.formhub.org/webform>`_ for **water_point_report** and enter some sample data.  Your webform should look like this.
+
+.. image:: img/wp/wp_form.png
+
+For this example, let's imagine we have four water points labeled A-D.  Pick a date (say Jan 1st, 2013) and submit a report for each water point indicating whether it's functional or not.  Once you've done this, go back to your formhub account and you should see **4** submissions for the **water_point_report**.
+
+Linking to bamboo
+~~~~~~~~~~~~~~~~~
+
+formhub provides some powerful ways to vizualize data but to generate dynamic indicators and for more advanced data analytics you will want to use `bamboo <http://bamboo.io>`_.
+
+1. Goto the water_point_report form page and under bamboo click the **Activate** button. 
+
+.. image:: img/wp/bamboo_activate.png
+
+What 
+
+.. image:: img/wp/bamboo_activated.png
+
+
+
+
+
+**Footnotes**
+
+.. [#] XLSForm is a simple form standard that allows you to author simple to complex forms using excel. To learn more about XLSForm please visit: the `formhub.org/syntax <http://formhub.org/syntax>`_.
+
