@@ -1,0 +1,18 @@
+[
+   {
+      "wp_id" : "A",
+      "functional" : "no"
+   },
+   {
+      "wp_id" : "B",
+      "functional" : "yes"
+   },
+   {
+      "wp_id" : "C",
+      "functional" : "yes"
+   },
+   {
+      "wp_id" : "D",
+      "functional" : "yes"
+   }
+]

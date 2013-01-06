@@ -12,6 +12,14 @@ Welcome to the Bamboo Usage Tutorials
    :maxdepth: 2
 
 
+Bamboo Usage Tutorials
+----------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   water_points
+
 
 Indices and tables
 ==================

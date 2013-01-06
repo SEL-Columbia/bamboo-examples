@@ -1,0 +1,30 @@
+[
+   {
+      "wp_id" : "C",
+      "functional" : "yes",
+      "submit_date" : {
+         "$date" : 1356998400000
+      }
+   },
+   {
+      "wp_id" : "D",
+      "functional" : "yes",
+      "submit_date" : {
+         "$date" : 1356998400000
+      }
+   },
+   {
+      "wp_id" : "A",
+      "functional" : "yes",
+      "submit_date" : {
+         "$date" : 1356998400000
+      }
+   },
+   {
+      "wp_id" : "B",
+      "functional" : "no",
+      "submit_date" : {
+         "$date" : 1356998400000
+      }
+   }
+]

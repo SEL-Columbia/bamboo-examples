@@ -1,0 +1,21 @@
+{
+   "wp_id" : {
+      "summary" : {
+         "A" : 1,
+         "D" : 1,
+         "C" : 1,
+         "B" : 1
+      }
+   },
+   "functional" : {
+      "summary" : {
+         "yes" : 3,
+         "no" : 1
+      }
+   },
+   "submit_date" : {
+      "summary" : {
+         "2013-01-01 00:00:00" : 4
+      }
+   }
+}
